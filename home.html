@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block konten %}
+    <h1>masker</h1>
+    <form action="/simpan" method="post">
+        <input type="varchar" name="jenis" placeholder="enter jenis.."><br>
+        <input type="varchar" name="warna" placeholder="enter warna.."><br>
+        <textarea name="fungsi" placeholder="enter fungsi.." ></textarea><br>
+        <textarea name="harga" placeholder="enter harga.."></textarea><br>
+        <button type="submit">SEND</button>
+    </form>
+{% endblock %}

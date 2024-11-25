@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block konten %}
+    <h1>masker</h1>
+    <form action="/aksiupdate" method="post" >
+        <input type="varchar" name="jenis" placeholder="Enter jenis" value="{{ value[1] }}" ><br>
+        <input type="varchar" name="warna" placeholder="Enter warna" value="{{ value[2] }}"><br>
+        <input type="varchar" name="fungsi" placeholder="Enter fungsi" value="{{ value[3] }}"><br>
+        <input type="varchar" name="harga" placeholder="Enter harga" value="{{ value[4] }}"><br>
+        <button type="submit">KIRIM</button>
+    </form>
+{% endblock %}
